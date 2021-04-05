@@ -48,7 +48,7 @@ body {
   top: 95px;
   right: 0;
   position: fixed;
-  width: 50%;
+  width: 70%;
   height: 70vh;
   background-image: linear-gradient(
     to right,
@@ -71,12 +71,12 @@ body {
   font-family: 'Poiret One', cursive;
 }
 
-.mobile-nav > a > h6 {
+.mobile-nav > a > h5 {
   font-size: 20px;
   transition: 0.3s;
 }
 
-.mobile-nav > a > h6:hover {
+.mobile-nav > a > h5:hover {
   font-weight: bolder;
   transition: 0.6s;
   transform: scale(1.3, 1.3);
