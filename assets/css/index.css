@@ -1,0 +1,262 @@
+#flag {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(
+    to right,
+    #68eaff,
+    #78ebff,
+    #86edff,
+    #92eeff,
+    #9eefff,
+    #adf0ff,
+    #bcf1ff,
+    #c9f2ff,
+    #dbf4ff,
+    #ecf6ff,
+    #f8faff,
+    #ffffff
+  );
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Simple-wallpapers-HD-for-desktop.png');
+  background-attachment: fixed;
+  padding-left: 30px;
+}
+
+.left-banner {
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: space-around;
+  text-align: center;
+  width: 40%;
+  height: 50%;
+  color: white;
+  letter-spacing: 3px;
+  font-family: 'Poiret One', cursive;
+}
+
+#apiBtn {
+  background-color: transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 5px solid #2980b9;
+  color: #3498db;
+  font-size: larger;
+  font-weight: bold;
+  transition: 0.7s;
+}
+
+#apiBtn:hover {
+  transition: 0.4s;
+  background-color: #2980b9;
+  color: whitesmoke;
+}
+
+#apiBtn:focus {
+  outline: none;
+}
+
+.global-container {
+  width: 100%;
+  height: 80vh;
+}
+
+.global-container-mid {
+  width: 80%;
+  height: 80%;
+}
+
+.local-data-container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.l-dt-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.local-data-section {
+  width: 25%;
+  height: 40%;
+  font-family: 'Poiret One', cursive;
+}
+
+.local-data-section:nth-child(1) {
+  color: #1e90ff;
+  border: 2px solid #1e90ff;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.local-data-section:nth-child(1):hover {
+  box-shadow: 0px 0px 10px #1e90ff;
+  text-shadow: 0px 0px 3px #1e90ff;
+  transition: 0.5s;
+}
+
+.local-data-section:nth-child(2) {
+  color: #2ed573;
+  border: 2px solid #2ed573;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.local-data-section:nth-child(2):hover {
+  box-shadow: 0px 0px 10px #2ed573;
+  text-shadow: 0px 0px 3px #2ed573;
+  transition: 0.5s;
+}
+
+.local-data-section:nth-child(3) {
+  color: crimson;
+  border: 2px solid crimson;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.local-data-section:nth-child(3):hover {
+  box-shadow: 0px 0px 10px crimson;
+  text-shadow: 0px 0px 3px crimson;
+  transition: 0.5s;
+}
+
+.local-total-data-container {
+  padding: 50px;
+  width: 100%;
+  height: 70vh;
+  clip-path: polygon(0 0, 65% 10%, 100% 8%, 100% 100%, 56% 100%, 0 100%);
+  background-image: linear-gradient(
+    to right,
+    #011128,
+    #050f2d,
+    #0e0c30,
+    #180732,
+    #230031
+  );
+  background-color: crimson;
+  border: none;
+}
+
+.local-total-data-mid-container {
+  width: 70%;
+  height: 90%;
+}
+
+.word-developer-container {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+    to right,
+    #011128,
+    #050f2d,
+    #0e0c30,
+    #180732,
+    #230031
+  );
+}
+
+.wd-mid-container > h1 {
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 50%;
+  color: white;
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.social-bar > a > img {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.social-bar > a > img:hover {
+  transition: 0.6s;
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+/* media query max-width:950px */
+@media (max-width: 950px) {
+  .nav-items {
+    display: none;
+  }
+
+  .left-banner {
+    width: 100%;
+    padding: 0;
+  }
+
+  #flag {
+    padding: 0;
+  }
+
+  .global-container-mid {
+    width: 95%;
+    height: 50%;
+  }
+
+  .l-dt-top {
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .l-dt-top > section {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .l-dt-top > section > h1 {
+    font-size: 20px;
+  }
+
+  .local-data-container {
+    height: auto;
+  }
+
+  #data-text > h5 {
+    font-size: 15px;
+  }
+
+  .local-total-data-mid-container {
+    width: 90%;
+    height: 60%;
+  }
+
+  .local-total-data-container {
+    padding: 0;
+  }
+
+  .wd-mid-container {
+    width: 100%;
+  }
+
+  .wd-mid-container > h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+/* media query max-width:350px */
+@media (max-width: 350px) {
+  .left-banner {
+    width: 100%;
+    padding: 0;
+  }
+
+  .left-banner > h5 {
+    font-size: 17px;
+  }
+}

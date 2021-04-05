@@ -1,0 +1,44 @@
+@keyframes brandAnimation {
+  0% {
+    color: white;
+  }
+
+  24% {
+    color: crimson;
+  }
+
+  25% {
+    color: white;
+  }
+  26% {
+    color: crimson;
+  }
+
+  33% {
+    color: white;
+  }
+  35% {
+    color: crimson;
+  }
+  36% {
+    color: white;
+  }
+
+  80% {
+    color: white;
+  }
+  81% {
+    color: crimson;
+  }
+
+  84% {
+    color: white;
+  }
+  85% {
+    color: crimson;
+  }
+
+  100% {
+    color: crimson;
+  }
+}

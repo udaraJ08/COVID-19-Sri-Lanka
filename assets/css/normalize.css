@@ -1,0 +1,186 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    to right,
+    #051937,
+    #021842,
+    #08144b,
+    #170e52,
+    #280056
+  );
+  background-attachment: fixed;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav {
+  border-radius: 50px 0 0 50px;
+  top: 95px;
+  right: 0;
+  position: fixed;
+  width: 50%;
+  height: 70vh;
+  background-image: linear-gradient(
+    to right,
+    #011128,
+    #0c1024,
+    #121121,
+    #16111d,
+    #17121a
+  );
+  z-index: 100;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile-nav > a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+
+.mobile-nav > a > h6 {
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 100;
+}
+
+nav > section > h1 {
+  color: #ecf0f1;
+  text-shadow: 2px 5px 2px black;
+  font-family: 'Poiret One', cursive;
+  animation: brandAnimation 20s linear infinite alternate;
+}
+
+.nav-items {
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 100%;
+  width: 40%;
+  font-family: 'Poiret One', cursive;
+}
+
+.nav-items > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-items > a > h4 {
+  padding-bottom: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-bottom: 1px white solid;
+}
+
+.nav-items > a > h4:hover {
+  font-weight: bolder;
+  transition: 0.6s;
+  transform: rotate(12deg);
+  color: #7bed9f;
+  border-bottom: #7bed9f;
+}
+
+.hamburger {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 35vh;
+  background-image: linear-gradient(
+    to right,
+    #011128,
+    #0c1024,
+    #121121,
+    #16111d,
+    #17121a
+  );
+  font-family: 'Poiret One', cursive;
+}
+
+.footer-container {
+  width: 60%;
+  height: 90%;
+}
+
+.social-container {
+  color: white;
+  height: 40%;
+  justify-content: space-around;
+}
+
+.social-bar {
+  width: 40%;
+  justify-content: space-around;
+}
+
+.dev-details {
+  height: 60%;
+  justify-content: space-around;
+  color: white;
+}
+
+/* media query max-width:950px */
+@media (max-width: 950px) {
+  nav {
+    background-image: linear-gradient(
+      to right,
+      #011128,
+      #050f2d,
+      #0e0c30,
+      #180732,
+      #230031
+    );
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .social-bar {
+    width: 70%;
+  }
+
+  .social-bar > a > img {
+    width: 50%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
