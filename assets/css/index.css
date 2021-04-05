@@ -169,9 +169,9 @@
   letter-spacing: 3px;
   text-align: center;
   width: 50%;
-  color: white;
+  color: #a4b0be;
   font-size: 2em;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 
 .social-bar > a > img {
@@ -246,6 +246,19 @@
   .wd-mid-container > h1 {
     font-size: 20px;
     width: 100%;
+  }
+
+  .local-data-section:nth-child(1),
+  .local-data-section:nth-child(2),
+  .local-data-section:nth-child(3) {
+    color: white;
+    border: 2px solid white;
+  }
+
+  .local-data-section:nth-child(1):hover,
+  .local-data-section:nth-child(2):hover,
+  .local-data-section:nth-child(3):hover {
+    box-shadow: 2px 2px 10px black;
   }
 }
 

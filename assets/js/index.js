@@ -7,7 +7,8 @@ $(document).ready(() => {
 
 $(window).on('load', function (e) {
   $('#pageLoader').fadeOut()
-  $('body').css('overflow', 'auto')
+  $('body').css('overflow-x', 'hidden')
+  $('body').css('overflow-y', 'auto')
 })
 
 $('#hmbBtn').on('click', () => {
